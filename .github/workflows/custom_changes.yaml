@@ -12,3 +12,5 @@ jobs:
         with:
           branch: 'main'
           create_orphan_branch: 'true'
+          config_email: 'actions@github.com'
+          config_user: 'Github Actions'
