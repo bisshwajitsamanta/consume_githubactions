@@ -10,7 +10,7 @@ jobs:
       - name: Run custom action from git_python repository
         uses: 'bisshwajitsamanta/git_python@v1'
         with:
-          branch: 'main'
+          branch: 'deployment'
           create_orphan_branch: 'true'
           config_email: 'actions@github.com'
           config_user: 'Github Actions'
