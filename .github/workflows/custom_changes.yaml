@@ -1,0 +1,14 @@
+name: Run Custom Github actions
+on: [push]
+jobs:
+  custom-action-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run custom action from git_python repository
+        uses: 'bisshwajitsamanta/git_python@v1'
+        with:
+          branch: 'main'
+          create_orphan_branch: 'true'
